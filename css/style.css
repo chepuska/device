@@ -1317,6 +1317,7 @@ body {
 }
 
 .modal-content {
+  position: relative;
   width: 920px;
   margin: auto;
   padding: 64px 76px;
@@ -1337,8 +1338,8 @@ body {
 
 .modal-close-button {
   position: absolute;
-  top: 104px;
-  right: 718px;
+  top: 64px;
+  right: 76px;
   z-index: 1;
 
   width: 50px;
