@@ -18,21 +18,19 @@
         <img src="images/logo.svg" alt="логотип сайта Дивайс" width="145" height="36">
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-        <label class="visually-hidden" for="search">Поиск по сайту
-        </label>
+        <label class="visually-hidden" for="search">Поиск по сайту</label>
         <input class="search-input" type="search" placeholder="Текст поиска" id="search" name="search" required>
-        <button class="search-button" type="submit">Найти
-        </button>
+        <button class="search-button" type="submit">Найти</button>
       </form>
-      <div class="user-block">
-        <a class="login" href="#">Войти</a>
-      </div>
+      <div class="user-block"><a class="login" href="#">Войти</a></div>
       <ul class="cart-block-list reset-list">
         <li class="cart-block-item">
           <a class="compare" href="#">Сравнить</a>
         </li>
         <li class="cart-block-item">
-          <a class="cart" href="#">Корзина</a>
+          <a class="cart" href="#">Корзина
+            <span class="cart-counter-product">2</span>
+          </a>
           <div class="popup popup-cart popup-cart-close">
             <h2 class="visually-hidden">Корзина</h2>
             <ul class="cart-list reset-list">
@@ -50,17 +48,16 @@
                   <img class="cart-img" src="images/icons/cart/product-2-small.png" alt="селфипалка профи" width="39" height="44">
                   <p class="product-name-title">Профессиональная селфи-палка</p>
                 </a>
-                <button class="cart-close-button" type="button"><span class="visually-hidden">Удалить позицию из корзины</span></button>
+                <button class="cart-close-button" type="button">
+                  <span class="visually-hidden">Удалить позицию из корзины</span>
+                </button>
               </li>
             </ul>
             <div class="result-sum-box">
-              <p class="product-sum">Товаров:
-                <span class="product-sum">2</span>
-              </p>
-              <p class="money-sum">Сумма:<span>2000</span>₽
-              </p>
+              <p class="product-sum">Товаров:<span class="product-sum">2</span></p>
+              <p class="money-sum">Сумма:<span>2000</span>₽</p>
             </div>
-            <button class="cart-open-link" type="button">
+            <button class="cart-open-button" type="button">
               <span>Открыть корзину</span>
             </button>
           </div>
@@ -95,13 +92,13 @@
       </div>
       <ul class="navigation-list reset-list">
         <li class="navigation-item">
-          <a class="navigation-link current-link" href="">Доставка</a>
+          <a class="navigation-link" href="#">Доставка</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="">Гарантия</a>
+          <a class="navigation-link" href="#">Гарантия</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="">Контакты</a>
+          <a class="navigation-link" href="#">Контакты</a>
         </li>
       </ul>
     </header>
@@ -172,7 +169,7 @@
             </div>
             <div class="slider-description">
               <h3 class="visually-hidden">Описание селфипалки</h3>
-              <b>Делай селфи,<br>как Бен Стиллер!</b>
+              <b>Делай селфи,<br>как Бен Стиллер! </b>
               <p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               <a class="button" href="#">Подробнее</a>
               <dl class="model-description">
@@ -191,37 +188,37 @@
             <li class="slider-navigation-item">
               <a class="slider-navigation-link" href="#">
                 <h3>Виртуальная реальность</h3>
-                <img src="images/slider/virtual.png" alt="Виртуальная реальность" width="160" height="160">
+                <img src="images/slider/virtual.svg" alt="Виртуальная реальность" width="160" height="160">
               </a>
             </li>
             <li class="slider-navigation-item">
               <a class="slider-navigation-link" href="#">
                 <h3>Моноподы для селфи</h3>
-                <img src="images/slider/selfi-sm.png" alt="Моноподы для селфи" width="160" height="160">
+                <img src="images/slider/selfi-sm.svg" alt="Моноподы для селфи" width="160" height="160">
               </a>
             </li>
             <li class="slider-navigation-item">
               <a class="slider-navigation-link" href="#">
                 <h3>Экшн-камеры</h3>
-                <img src="images/slider/camera.png" alt="Экшн-камеры" width="160" height="160">
+                <img src="images/slider/camera.svg" alt="Экшн-камеры" width="160" height="160">
               </a>
             </li>
             <li class="slider-navigation-item">
               <a class="slider-navigation-link" href="#">
                 <h3>Фитнес-браслеты</h3>
-                <img src="images/slider/braslet-sm.png" alt="Фитнес-браслеты" width="160" height="160">
+                <img src="images/slider/braslet-sm.svg" alt="Фитнес-браслеты" width="160" height="160">
               </a>
             </li>
             <li class="slider-navigation-item">
               <a class="slider-navigation-link" href="#">
                 <h3>Умные часы</h3>
-                <img src="images/slider/clock.png" alt="Умные часы" width="160" height="160">
+                <img src="images/slider/clock.svg" alt="Умные часы" width="160" height="160">
               </a>
             </li>
             <li class="slider-navigation-item">
               <a class="slider-navigation-link" href="#">
                 <h3>Квадрокоптеры</h3>
-                <img src="images/slider/copter-sm.png" alt="Квадрокоптеры" width="160" height="160">
+                <img src="images/slider/copter-sm.svg" alt="Квадрокоптеры" width="160" height="160">
               </a>
             </li>
           </ul>
@@ -259,10 +256,7 @@
       </section>
       <section class="delivery container">
         <h2 class="visually-hidden">Доставка</h2>
-        <a href="#">
-          <span class="car">
-            <img src="images/icons/delivery/car.svg" alt="машина едет на доставку заказа">
-          </span>
+        <a class="delivery-link" href="#">
           <h3>Доставим редкий товар под заказ</h3>
           <p class="info">
             <span class="visually-hidden">доставка под заказ</span>
@@ -336,17 +330,20 @@
           </ul>
           <ul class="footer-social-list reset-list">
             <li class="footer-social-item">
-              <a class="footer-social-link facebook" href="#" aria-label="facebook">
+              <a class="footer-social-link" href="#" aria-label="facebook">
+                <span class="facebook"></span>
                 <span class="visually-hidden">Facebook магазина Divice</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link instagram" href="#" aria-label="instagram">
+              <a class="footer-social-link" href="#" aria-label="instagram">
+                <span class="instagram"></span>
                 <span class="visually-hidden">Instagram магазина Divice</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link twitter" href="#" aria-label="twitter">
+              <a class="footer-social-link" href="#" aria-label="twitter">
+                <span class="twitter"></span>
                 <span class="visually-hidden">Twitter магазина Divice</span>
               </a>
             </li>
@@ -378,9 +375,9 @@
     <div class="modal-container">
       <div class="modal modal-content">
         <h2 class="modal-title">Доставка под заказ</h2>
-        <a class="modal-close-button">
+        <button class="modal-close-button">
           <span class="visually-hidden">Закрыть окно доставки</span>
-        </a>
+        </button>
         <form class="form-modal" action="https://echo.htmlacademy.ru" method="POST">
           <div class="wrapper-first">
             <div class="wrap-name">
@@ -405,9 +402,13 @@
                 <button class="tooltip" type="button"><span class="tooptip-span">Постараемся найти,сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span></button>
               </div>
               <div class="amount-box">
-                <button class="decrease" type="button"><span class="visually-hidden">Увеличить количество</span></button>
+                <button class="decrease" type="button">
+                  <span class="visually-hidden">Увеличить количество</span>
+                </button>
                 <input class="input-modal amount" type="number" name="amount" id="amount">
-                <button class="increase" type="button"><span class="visually-hidden">Уменьшить количество</span></button>
+                <button class="increase" type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
               </div>
             </div>
           </div>

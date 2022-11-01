@@ -31,15 +31,16 @@
           <a class="compare" href="#">Сравнить</a>
         </li>
         <li class="cart-block-item">
-          <a class="cart" href="#">Корзина</a>
+          <a class="cart" href="#">Корзина
+            <span class="cart-counter-product">2</span>
+          </a>
           <div class="popup popup-cart popup-cart-close">
             <h2 class="visually-hidden">Корзина</h2>
             <ul class="cart-list reset-list">
               <li class="cart-item">
                 <a class="cart-link" href="#">
                   <img class="cart-img" src="images/icons/cart/product-1-small.png" alt="селфипалка любительская" width="39" height="44">
-                  <p class="product-name-title">Любительская селфи-палка</p>
-                </a>
+                  <p class="product-name-title">Любительская селфи-палка</p></a>
                 <button class="cart-close-button" type="button">
                   <span class="visually-hidden">Удалить позицию из корзины</span>
                 </button>
@@ -47,25 +48,31 @@
               <li class="cart-item">
                 <a class="cart-link" href="#">
                   <img class="cart-img" src="images/icons/cart/product-2-small.png" alt="селфипалка профи" width="39" height="44">
-                  <p class="product-name-title">Профессиональная селфи-палка</p>
-                </a>
+                  <p class="product-name-title">Профессиональная селфи-палка</p></a>
                 <button class="cart-close-button" type="button">
                   <span class="visually-hidden">Удалить позицию из корзины</span>
                 </button>
               </li>
             </ul>
             <div class="result-sum-box">
-              <p class="product-sum">Товаров:<span class="product-sum">2</span></p>
-              <p class="money-sum">Сумма:<span>2000</span>₽</p>
+              <p class="product-sum">Товаров:
+                <span class="product-sum">2</span>
+              </p>
+              <p class="money-sum">Сумма:
+                <span>2000</span>₽
+              </p>
             </div>
-            <button class="cart-open-link" type="button"><span>Открыть корзину</span></button>
+            <button class="cart-open-button" type="button">
+              <span>Открыть корзину</span>
+            </button>
           </div>
         </li>
       </ul>
       <div class="catalog-box">
         <a class="catalog" href="catalog.html">Каталог товаров
-          <p class="open-catalog"><span class="visually-hidden">Открыть каталог</span></p>
-        </a>
+          <p class="open-catalog">
+            <span class="visually-hidden">Открыть каталог</span></p>
+          </a>
         <ul class="drop-menu-list reset-list">
           <li class="drop-menu-item">
             <a class="drop-menu-link" href="#">Виртуальная реальность</a>
@@ -89,13 +96,13 @@
       </div>
       <ul class="navigation-list reset-list">
         <li class="navigation-item">
-          <a class="navigation-link current-link" href="">Доставка</a>
+          <a class="navigation-link" href="#">Доставка</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="">Гарантия</a>
+          <a class="navigation-link" href="#">Гарантия</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="">Контакты</a>
+          <a class="navigation-link" href="#">Контакты</a>
         </li>
       </ul>
     </header>
@@ -123,8 +130,12 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 12px; width: 120px">
-                    <button class="range-toggle toggle-min" type="button"><span class="visually-hidden">Изменить минимальную цену</span></button>
-                    <button class="range-toggle toggle-max" type="button"><span class="visually-hidden">Изменить максимальную цену цену</span></button>
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену цену</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -143,7 +154,7 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-subtitle">Цвет</legend>
-              <ul class="catalog-filter-list reset-list">
+              <ul class="catalog-filter-list filter-list-checkbox reset-list">
                 <li class="catalog-filter-item">
                   <input class="visually-hidden control-input" type="checkbox" name="black" id="black" checked>
                   <label class="control-label" for="black">Черный<span class="control-mark"></span></label>
@@ -168,7 +179,7 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-subtitle">Bluetooth</legend>
-              <ul class="catalog-filter-list reset-list">
+              <ul class="catalog-filter-list filter-list-radio reset-list">
                 <li class="catalog-filter-item">
                   <input class="visually-hidden control-input" type="radio" checked name="bluetooth-available" id="bluetooth-available-are" value="bluetooth-available-are">
                   <label class="control-label" for="bluetooth-available-are">Есть<span class="control-mark"></span></label>
@@ -206,7 +217,9 @@
                   <span class="product-card-price">500 ₽</span>
                 </a>
                 <a class="button product-card-button">Подробнее</a>
-                <p class="new"><span class="visually-hidden">Новинка</span></p>
+                <p class="new">
+                  <span class="visually-hidden">Новинка</span>
+                </p>
               </li>
               <li class="product-card">
                 <a class="product-card-link" href="#">
@@ -236,7 +249,9 @@
             <button class="button-more" type="button">Загрузить ещё</button>
             <section class="cards-pagination">
               <h3 class="visually-hidden">Переход на другую страницу</h3>
-              <button class="button-pagination button-pagination-prev" type="button">Назад</button>
+              <button class="button-pagination button-pagination-prev" type="button">
+                <span>Назад</span>
+              </button>
               <ul class="cards-pagination-list reset-list">
                 <li class="cards-pagination-item">
                   <a class="cards-pagination-link cards-pagination-current-link" href="#">1</a>
@@ -254,7 +269,7 @@
                   <a class="cards-pagination-link" href="#">15</a>
                 </li>
               </ul>
-              <button class="button-pagination button-pagination-next pagination-disabled" type="button">Вперед</button>
+              <button class="button-pagination button-pagination-next pagination-disabled" type="button"><span>Вперед</span></button>
             </section>
           </section>
         </section>
@@ -286,17 +301,20 @@
           </ul>
           <ul class="footer-social-list reset-list">
             <li class="footer-social-item">
-              <a class="footer-social-link facebook" href="#" aria-label="facebook">
+              <a class="footer-social-link" href="#" aria-label="facebook">
+                <span class="facebook"></span>
                 <span class="visually-hidden">Facebook магазина Divice</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link instagram" href="#" aria-label="instagram">
+              <a class="footer-social-link" href="#" aria-label="instagram">
+                <span class="instagram"></span>
                 <span class="visually-hidden">Instagram магазина Divice</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link twitter" href="#" aria-label="twitter">
+              <a class="footer-social-link" href="#" aria-label="twitter">
+                <span class="twitter"></span>
                 <span class="visually-hidden">Twitter магазина Divice</span>
               </a>
             </li>
@@ -328,9 +346,9 @@
     <div class="modal-container">
       <div class="modal modal-content">
         <h2 class="modal-title">Доставка под заказ</h2>
-        <a class="modal-close-button">
+        <button class="modal-close-button">
           <span class="visually-hidden">Закрыть окно доставки</span>
-        </a>
+        </button>
         <form class="form-modal" action="https://echo.htmlacademy.ru" method="POST">
           <div class="wrapper-first">
             <div class="wrap-name">
